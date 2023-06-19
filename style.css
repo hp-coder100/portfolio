@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  transition:all .2s ease-out;
+}
+
+header{
+    position: fixed;
+    top:0;
+    z-index:1000;
+    display: block;
+    width: 100%;
+    height: 8vh;
+    top:0;
+    background-color: #2f4f4f;
+    margin: 0 auto;   
+}
+
+header .nav {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:0 5%;
+    align-items: center;
+    margin: 0 auto;
+}
+header .nav .logo
+{   
+    display: flex;
+    color:white;
+    font-size: 2em;
+    font-weight: bolder;
+}
+header .nav .logo img{
+    width: 5%;
+    height:5%;
+    display: block;
+}
+
+header .nav .menu {
+  display: flex;
+  list-style: none;
+  
+}
+header .nav .menu .nav-item {
+  color: white;
+  padding: 2px;
+  margin: 0 5px;
+
+}
+
+header .nav .menu .nav-item .nav-link{
+    color:white;
+    text-decoration: none;
+}
+header .nav .menu .nav-item .nav-link:hover{
+    color:cadetblue
+}
+
+section{
+  height: 100vh;
+  overflow-y: hidden;
+  padding-top: 10vh;
+  border-bottom: 2px solid grey;
+
+}
+
+
+
+
+#home .container{
+    margin:0 auto;
+    width: 90%;
+    display: flex;
+    padding:0 10px;
+    justify-content: space-around;
+}
+#home .container .col{
+    width: 50%;
+    align-items:center;
+    margin: auto 5%;
+    transform: translateX(-50%, 0%);
+    transition: all 1s ease-in-out;
+}
+
+
+#home .container .col h1{
+    font-size: 2.5rem;    
+}
+
+
+#home .container .col h1 span{
+    font-size: 3rem;
+    color: #2f4f4f;    
+}
+#home .container .col h2{
+    font-size: 2rem;    
+}
+#home .container .col button{
+    height: 2rem;
+    width: 5rem;
+    background-color: #2f4f4f;
+    border-radius: 5%;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+
+#home .container .col button a{
+    text-decoration: none;
+    color: wheat;
+}
+#home .container .col button:hover{
+    background-color: cadetblue;
+
+}
+
+
+
+#projects .heading{
+    font-size: 2rem;
+    color: #2f4f4f;
+    text-align: center;
+    width:100%;
+    margin-bottom: 5%;
+}
+#projects .container{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: 0  auto;
+}
+
+#projects .container .col{
+    position: relative;
+    height:40vh;
+    width:18vw;
+    border-radius: 5%;
+    border: 2px solid #2f4f4f;
+    padding:1%;
+    box-shadow: 0 7px grey;
+}
+#projects .container .col:hover{
+    transform: scale(1.1);
+}
+
+#projects .container .col button{
+    position: absolute;
+    top:100%;
+    left:30%;
+    height: 2rem;
+    width: 5rem;
+    background-color: #2f4f4f;
+    border-radius: 5%;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: .9rem;
+}
+#projects .container .col button a{
+    text-decoration: none;
+    color:white;
+}
+#projects .container .col button:hover{
+    background-color: cadetblue;
+}
+
+
+#projects .container .col .title{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+#projects .container .col .title{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+#projects .container .col .discription{
+    max-height: 80%;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+
+#contact .heading{
+    font-size: 2rem;
+    color: #2f4f4f;
+    text-align: center;
+    width:100%;
+    font-weight: bolder;
+    margin-bottom: 1%;
+   
+}
+
+
+
+
+#contact input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+   
+#contact input[type=submit]{
+    height: 2.5rem;
+    width: 5rem;
+    background-color: #2f4f4f;
+    border-radius: 5%;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: .9rem;
+}
+#contact input[type=submit]:hover{
+    background-color: green;
+}
+  
+  /* Add a background color and some padding around the form */
+  #contact .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #contact form{
+    width: 60%;
+    margin: 0 auto;
+    padding: 3%;
+    border-radius: 1%;
+    background-color: cadetblue;
+  }
+
+
+
+#about .container{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin:0 auto;
+}
+
+#about .container .col{
+    padding: 2%;
+    width: 50%;
+    margin: auto;
+}
+#about .container .col .profileimg{
+    width: 60%;
+    height: 60%;
+    margin-left: 15%;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px black;
+
+}
+#about .container .col .heading{
+    color:#2f4f4f;
+    font-size: 2rem;
+}
+#about .container .col .aboutme{
+    padding: 1%;
+    color: cadetblue;
+    font-weight: bold;
+}
+#about .container .col .aboutme span{
+    color:#2f4f4f
+}
+
+
+
+#about .container .col .coding{
+    margin-top: 2%;
+    color:#2f4f4f
+}
+#about .container .col .coding ul{
+    margin: 2%;
+    list-style:disc;
+}
+
+#about .container .col .coding ul li {
+margin-left: 2%;
+}
+
+#about .container .col .coding ul li :hover{
+    color:blue
+}
+#about .container .col .coding ul li a{
+    text-decoration: none;
+    color:cadetblue; 
+    
+}
+
+#about .container .col .skills{
+    margin-top: 2%;
+    color:#2f4f4f
+}
+#about .container .col .skills .skillContainer{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+
+}
+
+#about .container .col .skills .skillContainer .row{
+    
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+
+}
+#about .container .col .skills .skillContainer .row .item{
+    width: 10%;
+    height: 12%;
+}
+
+#about .container .col .skills .skillContainer .row .item img{
+    width: 100%;
+    height: 100%;
+}
+#about .container .col .skills .skillContainer .row .item p{
+display: none;
+}
+footer{
+    height: 8vh;
+    padding: 5px;
+    background-color: darkslategray;
+    bottom: 0px; 
+    color:white;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+}
+
+footer div a{
+    margin:0 5px;
+    color:white;
+}
+
+footer p{
+    
+    font-size:.8rem;
+    width: fit-content;
+    margin: 5px auto;
+}
